@@ -1,5 +1,6 @@
 import React from 'react';
 import { BlogPostModel } from '../models/blog-post';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { BlogPost } from './BlogPosts/BlogPost';
 import { RouteComponentProps } from 'react-router';
 import { BlogPostRepository } from '../data/blog-post-repository';
@@ -30,8 +31,7 @@ const SingleBlog: React.FunctionComponent<RouteComponentProps<RouteParams>> = ({
     return (
         <div>
                 <BlogPost blogPost={blogPosts}/>
-
-            
+                <Link to={"/post/"+match.params.id++}><button>Next post</button></Link>            
         </div>
     );
 }

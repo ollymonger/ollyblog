@@ -7,15 +7,17 @@ interface BlogPostProps {
     blogPostRepository: BlogPostRepository;
 }
 
-const AllBlogPosts: React.FunctionComponent<BlogPostProps> = ({ blogPostRepository: blogRepo }) => {
+const blogPostRepository = new BlogPostRepository();
+
+const AllBlogPosts: React.FunctionComponent<BlogPostProps> = props => {
     const [blogPosts, setBlogPosts] = React.useState<BlogPostModel[]>(null);
 
     React.useEffect(() => {
-        const allPosts = blogRepo.getAll();
+        const allPosts = blogPostRepository.getAll();
         setBlogPosts(allPosts);
         console.log(allPosts);
 
-    }, [blogRepo]);
+    }, [blogPostRepository]);
 
     if(blogPosts === null){
         return <p>Loading!</p>;
