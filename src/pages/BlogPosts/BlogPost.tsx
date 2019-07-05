@@ -12,9 +12,9 @@ export interface BlogPostProps {
 const BlogPost: React.FunctionComponent<BlogPostProps> = ({ blogPost }) => {
     return (
         <>
-            <Link to={"/post/" + blogPost.id}><h2>{blogPost.title}</h2></Link>
-            <p>{blogPost.blurb}</p>
-            <p>{blogPost.author}</p>
+            <Link to={"/post/" + blogPost.id} style={{textDecoration: 'none'}}><h2>{blogPost.title}</h2></Link>
+            <p >{blogPost.blurb}</p>
+            <p >{blogPost.author}</p>
         </>
     );
 };

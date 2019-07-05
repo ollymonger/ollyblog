@@ -5,25 +5,25 @@ export class BlogPostRepository {
     private blogPosts: BlogPostModel[] = [
         {
             id: 0,
-            title: "First blog",
+            title: "First update",
             author:"by Olly",
             blurb:"blog text"
         },
         {
             id: 1,
-            title: "second",
+            title: "Second update",
             author:"by Olly",
             blurb:"blog text"
         },
         {
             id: 2,
-            title: "3rd",
+            title: "Longer than before update",
             author:"by Olly",
-            blurb:"blog text"
+            blurb:"173423491273b4 8y a8a8s ud8as 8dunasndhasdhas8d as8d asud mas9d masd as90d n8as9d 89as8d 9as8d9 0n8as09dn 8as908d"
         },
         {
             id: 3,
-            title: "4th",
+            title: "Hi there",
             author:"by Olly",
             blurb:"blog text"
         }

@@ -31,7 +31,7 @@ const SingleBlog: React.FunctionComponent<RouteComponentProps<RouteParams>> = ({
     return (
         <div>
                 <BlogPost blogPost={blogPosts}/>
-                <Link to={"/post/"+match.params.id++}><button>Next post</button></Link>            
+                <Link to={"/"}><button>Back to Home</button></Link>            
         </div>
     );
 }
